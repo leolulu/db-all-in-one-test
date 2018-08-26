@@ -34,4 +34,11 @@ router.post('/posttest',function(req,res){
   res.end()
 })
 
+router.post('/userpost',function(req,res){
+  console.log('收到userinset请求')
+  console.log(req.body)
+  res.send(req.body)
+  res.end()
+})
+
 module.exports = router;
